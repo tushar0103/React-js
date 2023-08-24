@@ -1,0 +1,29 @@
+import logo from './logo.svg';
+import './App.css';
+import message from './message';
+function App() {
+  let lang = 'react';
+  let lab='mca lab';
+
+  return (
+   <div className='App'><h2>iamlearning react JavaScript</h2></div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+import React from 'react'
+
+
+const message = (props) => {
+  return (
+    <div><h2>wearereading react(props)</h2></div>
+  )
+}
+
+export default message
