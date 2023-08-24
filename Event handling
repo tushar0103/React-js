@@ -1,0 +1,45 @@
+//App.jsx
+
+import logo from './logo.svg';
+import './App.css';
+import eventex from './eventex';
+function App() {
+ 
+  return (
+    <div className='App'>
+      <eventex />
+    </div>
+  );
+  
+}
+
+export default App;
+
+
+//eventex.jsx
+import React from 'react'
+import Mybutton from './Mybutton';
+
+const eventex = () => {
+    const displayMsg = (msg) =>{
+        alert(msg);
+    }
+  return (
+    <div><h2>Event handling</h2>
+   <Mybutton /></div>
+  );
+}
+
+export default eventex
+
+//Mybutton.jsx
+
+import React from 'react'
+
+const Mybutton = () => {
+  return (
+    <div>   <button onClick={() =>displayMsg("this is reading react")}>clickme</button></div>
+  )
+}
+
+export default Mybutton
