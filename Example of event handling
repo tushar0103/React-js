@@ -1,0 +1,35 @@
+import React from 'react'
+
+const eventex = () => {
+    const displayMsg = () =>{
+        alert("this is button");
+    }
+  return (
+    <div><h2>Event handling</h2>
+    <button onClick={displayMsg}>clickme</button></div>
+  )
+}
+
+export default eventex
+
+
+
+
+
+
+
+
+//
+import React from 'react'
+
+const eventex = () => {
+    const displayMsg = (msg) =>{
+        alert(msg);
+    }
+  return (
+    <div><h2>Event handling</h2>
+    <button onClick={() =>displayMsg("this is reading react")}>clickme</button></div>
+  )
+}
+
+export default eventex
