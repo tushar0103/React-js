@@ -1,0 +1,47 @@
+import React, { useState } from 'react'
+
+const Form1 = () => {
+    const[form,setform]= useState({
+        name: " ",
+        pwd: " ",
+        gender: " "
+    })
+    const changeInput= (event) =>{
+        const {name, value}= event.target;
+        setform({...form,[name]:value});
+    }
+    // const[name, setname]= useState("mca")
+    // const changeinput=(event) =>{
+    //     setname(event.target.value);
+        
+    // }
+    // const changepwd=(event) =>{
+    //     setpwd(event.target.value);
+        
+    // };
+    // const changeGender=(event) =>{
+    //     setGender(event.target.value);
+        
+    // };
+
+
+
+  return (
+    <div className="m-3" >
+        <h2>form example</h2>
+        <form className="d-flex flex-column col-3">
+        <label >enter your name</label>
+        <input type="text" name="name" value={form.name} placeholder='Enter you name' onChange={changeInput} />
+        <label >Enter your password </label>
+        <input type="text" name="password" value={form.pwd} placeholder='enter password' onChange={changeInput} /></form>
+        <label >gender</label><div>
+        <input type="radio" name="gender" value={form.male} onChange={changeInput} /><b>&nbsp;male</b>
+        
+        <input type="radio" name="gender" value={form.female} onChange={changeInput} /><b>&nbsp;female</b></div>
+        {/* <div>{form.name}</div> */}
+        {/* <div>{pwd}</div> */}
+        </div>
+  )
+}
+
+export default Form1;
