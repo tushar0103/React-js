@@ -1,0 +1,17 @@
+import React from 'react'
+
+
+function App(){
+  
+  return <>
+  <MyName /><div>Hello world</div>
+  <p>My name is Tushar</p></>
+ 
+ 
+}
+function MyName(){
+  return <><div>My college is KIET College</div></>
+}
+
+
+export default App;
